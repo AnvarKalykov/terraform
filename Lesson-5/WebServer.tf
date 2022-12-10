@@ -15,7 +15,7 @@ resource "aws_eip" "my_static_ip" {
   vpc      = true # Need to add in new AWS Provider version
   tags = {
     Name  = "Web Server IP"
-    Owner = "Denis Astahov"
+    Owner = "Anvar Kalykov"
   }
 }
 

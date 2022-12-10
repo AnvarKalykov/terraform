@@ -7,5 +7,6 @@ output "webserver_public_ip_address" {
 }
 
 output "webserver_private_ip_address" {
-  value = aws_instance.my_webserver.private_ip
+  value       = aws_instance.my_webserver.private_ip
+  description = "This is Webserver's private ip"
 }

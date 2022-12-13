@@ -34,6 +34,15 @@ data "aws_ami" "latest_amazon" {
   }
 }
 
+// How to use
+/*
+resource "aws_instance" "my_webserver_with_latest_ubuntu_ami" {
+  ami           = data.aws_ami.latest_ubuntu.id
+  instance_type = "t3.micro"
+}
+*/
+
+
 output "latest_amazon_linux_ami_id" {
   value = data.aws_ami.latest_amazon.id
 }

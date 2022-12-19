@@ -1,0 +1,22 @@
+#Autofill parameters for dev
+
+#File names can be  as:
+# terraform.tfvars
+# prod.auto.tfvars
+# dev.auto.tfvars
+
+region                     = "us-east-1"
+instance_type              = "t3.micro"
+enable_detailed_monitoring = true
+
+
+allow_ports = ["443", "8080"]
+
+common_tags = {
+  Owner       = "Anvar"
+  Project     = "Phoenix"
+  CostCenter  = "12345"
+  Environment = "prod"
+}
+
+terraform apply -var-file="prod.tfvars"

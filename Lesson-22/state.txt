@@ -1,0 +1,20 @@
+1) terraform state show aws_instance.example
+read only
+
+2) terraform state list
+read only
+show all resources in the state list
+
+3) terraform state pull
+read only
+read all remote state and show on screen
+
+4) terraform state rm something
+remove resource
+Terraform not managed this resources anymore
+
+5) terraform state mv something
+move resource (change name resource or something)
+
+6) terraform state push
+Overwrite state

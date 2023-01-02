@@ -1,0 +1,9 @@
+1) terraform workspace show
+
+2) terraform workspace list
+
+3) terraform workspace new name_workspace
+
+4) terraform workspace select
+
+5) terraform workspace delete name_workspace
